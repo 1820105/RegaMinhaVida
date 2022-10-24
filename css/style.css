@@ -31,6 +31,10 @@ body{
 color:#037951;
 }
 
+.loading{
+    color:hsl(0, 0%, 0%);
+    }
+
 .para{
     color:#e60ec2;
     }
@@ -41,6 +45,7 @@ color:#037951;
 
 .card-group{
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .card-group-body{
