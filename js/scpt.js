@@ -3,8 +3,8 @@
 //.then(Response => {
 //    return Response.json()
 //})
-//.then(data1 => {
-//    var advise = data1.plantName
+//.then(data => {
+//    var advise = data.plantName
 //    para.innerText = advise
 //})
 
