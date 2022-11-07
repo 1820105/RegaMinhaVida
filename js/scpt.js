@@ -20,22 +20,27 @@ async function getAllPosts() {
 
     const data = await response.json();
         //console.log(data);
-        //loadingElement.classList.add("hide");
+        loadingElement.classList.add("hide");
     
     data.map((post)=> {
         const div = document.createElement("div")
         const plantName = document.createElement("h2")
-        const soilMoisture = document.createElement("p")
-        const airHumidity = document.createElement("a")
+        const airHumidity = document.createElement("h3")
+        const soilMoisture = document.createElement("h3")
+        const sunLight = document.createElement("h3")
+        
 
-        plantName.innerText = post.plantName;
+        label="teste", plantName.innerText = post.plantName;
+        airHumidity.innerText = post.airHumidity;
         soilMoisture.innerText = post.soilMoisture;
-        airHumidity.innerText = post.airHumidity
+        sunLight.innerText = post.sunLight;
+
         //link.setAttribute("href", `/post.html?id=${post.id}`)
 
         div.appendChild(plantName);
-        div.appendChild(soilMoisture);
         div.appendChild(airHumidity);
+        div.appendChild(soilMoisture);
+        div.appendChild(sunLight);       
 
         postsContainer.appendChild(div);
 

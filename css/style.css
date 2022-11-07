@@ -118,3 +118,18 @@ color:#037951;
 .low-high {
     font-size: 22px;
 }
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    color: #028d6d;
+    text-align:left;
+    }
+
+.coluna-50 {
+    width: 50%;
+}
+
+.hide {
+color: #ec6ed7;
+}
